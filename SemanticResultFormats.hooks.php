@@ -25,27 +25,27 @@ final class SRFHooks {
 		// Keep this in alphabetical order please!
 		$testFiles = [
 
-			'Resources',
+			'Integration/Resources',
 
 			// Formats
-			'formats/Array',
-			'formats/Dygraphs',
-			'formats/EventCalendar',
-			'formats/Gallery',
-			'formats/Graph',
-			'formats/Incoming',
-			'formats/jqPlotChart',
-			'formats/jqPlotSeries',
-			'formats/ListWidget',
-			'formats/Math',
-			'formats/PageWidget',
-			'formats/Sparkline',
-			'formats/TagCloud',
-			'formats/Timeseries',
-			'formats/Tree',
-			'formats/vCard',
-			'formats/MediaPlayer',
-			'formats/DataTables',
+			'Unit/Formats/Array',
+			'Unit/Formats/Dygraphs',
+			'Unit/Formats/EventCalendar',
+			'Unit/Formats/Gallery',
+			'Unit/Formats/Graph',
+			'Unit/Formats/Incoming',
+			'Unit/Formats/jqPlotChart',
+			'Unit/Formats/jqPlotSeries',
+			'Unit/Formats/ListWidget',
+			'Unit/Formats/Math',
+			'Unit/Formats/PageWidget',
+			'Unit/Formats/Sparkline',
+			'Unit/Formats/TagCloud',
+			'Unit/Formats/Timeseries',
+			'Unit/Formats/Tree',
+			'Unit/Formats/vCard',
+			'Unit/Formats/MediaPlayer',
+			'Unit/Formats/DataTables',
 
 			// Boilerplate
 			// Register your testclass
