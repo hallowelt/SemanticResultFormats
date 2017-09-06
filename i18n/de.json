@@ -71,6 +71,7 @@
 	"srf_printername_outline": "Gliederung",
 	"srf_paramdesc_outlineproperties": "Die Liste der mit Kommata voneinander getrennten Attribute, die in der Kopfzeile der Gliederung angezeigt werden sollen",
 	"srf_printername_sum": "Zahlen (Summe)",
+	"srf_printername_sumeuro": "Zahlen (Summe in Euro)",
 	"srf_printername_average": "Zahlen (Durchschnitt)",
 	"srf_printername_max": "Zahlen (höchste Zahl)",
 	"srf_printername_min": "Zahlen (niedrigste Zahl)",

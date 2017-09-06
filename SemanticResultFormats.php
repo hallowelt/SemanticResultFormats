@@ -153,6 +153,7 @@ class SemanticResultFormats {
 			'eventcalendar' => 'SRF\EventCalendar',
 			'outline' => 'SRFOutline',
 			'sum' => 'SRFMath',
+			'sumeuro' => 'SRFMath',
 			'product' => 'SRFMath',
 			'average' => 'SRFMath',
 			'min' => 'SRFMath',

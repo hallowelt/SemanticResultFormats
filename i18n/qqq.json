@@ -80,6 +80,7 @@
 	"srf_printername_outline": "{{doc-smwformat|outline}}\n\nIt is basically a list, or nested list, of topics, subtopics, subsubtopics, etc., as deeply stacked as defined by page editors in an inline query.\nThere is an [https://www.semantic-mediawiki.org/wiki/Help:Outline_format Outline example]\n{{Identical|Outline}}",
 	"srf_paramdesc_outlineproperties": "{{doc-paramdesc|outlineproperties}}\n\n\"Outline\" means the outline of text or document here.",
 	"srf_printername_sum": "{{doc-smwformat|sum}}",
+	"srf_printername_sumeuro": "{{doc-smwformat|sumeuro}}",
 	"srf_printername_average": "{{doc-smwformat|average}}",
 	"srf_printername_max": "{{doc-smwformat|max}}",
 	"srf_printername_min": "{{doc-smwformat|min}}",

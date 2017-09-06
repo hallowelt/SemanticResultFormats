@@ -71,6 +71,9 @@ class SRFMath extends SMWResultPrinter {
 			case 'sum':
 				return array_sum( $numbers );
 				break;
+			case 'sumeuro':
+				return $this->getSumEuro( array_sum($numbers) );
+				break;
 			case 'product':
 				return array_product( $numbers );
 				break;
@@ -85,6 +88,10 @@ class SRFMath extends SMWResultPrinter {
 		}
 	}
 
+
+	protected function getSumEuro($sum){
+		return number_format($sum, 2) . " €";
+	}
 	/**
 	 * @param SMWQueryResult $res
 	 *

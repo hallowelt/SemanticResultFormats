@@ -30,7 +30,7 @@ class MathTest extends QueryPrinterRegistryTestCase {
 	 * @return array
 	 */
 	public function getFormats() {
-		return [ 'max', 'min', 'sum', 'product', 'average', 'median' ];
+		return [ 'max', 'min', 'sum', 'sumeuro', 'product', 'average', 'median' ];
 	}
 
 	/**

@@ -29,6 +29,7 @@ $GLOBALS['srfgFormats'] = [
 	'jqplotchart',
 	'jqplotseries',
 	'sum',
+	'sumeuro',
 	'average',
 	'min',
 	'max',
@@ -63,7 +64,7 @@ $GLOBALS['srfgFormats'] = [
 	// large number of incoming properties assigned to each selected entity
 	// @see Help:Incoming_format
 	// 'incoming',
-	
+
 	// Still in alpha:
 	// 'jitgraph', // Several issues need to be fixed before this can be enabled, most notably it does not work properly with the RL.
 
