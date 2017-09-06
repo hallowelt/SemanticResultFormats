@@ -1,3 +1,5 @@
+/// <reference types="qunit" />
+
 import { Controller } from "../../../resources/ts/Filtered/Controller";
 import { MockedFilter } from "../Util/MockedFilter";
 import { View } from "../../../resources/ts/Filtered/View/View";
@@ -22,7 +24,7 @@ export class ControllerTest {
 		let data = { 'foo': {} };
 
 		// Run
-		let c = new Controller( undefined, data );
+		let c = new Controller( undefined, data, {} );
 
 		// Assert: Can construct
 		assert.ok( c instanceof Controller, 'Can construct Controller.' );
@@ -39,7 +41,7 @@ export class ControllerTest {
 	public testAttachViewsAndSwitchToViews( assert: QUnitAssert ) {
 
 		// Setup
-		let c = new Controller( undefined, undefined );
+		let c = new Controller( undefined, undefined, undefined );
 		let viewIds = [ 'foo', 'bar', 'baz' ];
 		let viewsShown: View[] = [];
 		let viewsHidden: View[] = [];
@@ -115,7 +117,7 @@ export class ControllerTest {
 		};
 
 		// Run
-		new Controller( targetElement, undefined ).show();
+		new Controller( targetElement, undefined, undefined ).show();
 
 		// Assert
 		assert.ok( targetShown, 'Container made visible.' );
@@ -129,7 +131,7 @@ export class ControllerTest {
 
 		// Setup
 		let data = { 'foo': {} };
-		let controller = new Controller( undefined, data );
+		let controller = new Controller( undefined, data, {} );
 		let filterIds = [ 'foo', 'bar', 'baz' ];
 
 		filterIds.forEach( ( filterId ) => {

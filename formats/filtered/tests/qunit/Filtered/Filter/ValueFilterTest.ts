@@ -30,7 +30,7 @@ export class ValueFilterTest extends QUnitTest {
 	public testInit( assert: QUnitAssert ) {
 
 		// Setup
-		let controller = new Controller( $(), {} );
+		let controller = new Controller( $(), {}, {} );
 		let options = {
 			'switches': [
 				'and or'
@@ -53,16 +53,18 @@ export class ValueFilterTest extends QUnitTest {
 		assert.strictEqual( target.find( '.filtered-collapsible' ).length, 1, 'Added container for collapsable content.' );
 		assert.strictEqual( target.find( '.filtered-value-andor' ).length, 1, 'Added container for and/or switch.' );
 
-		// Assert: One input added per value
-		for ( let value of options.values ) {
-			assert.strictEqual( target.find( "input[value=\"" + value + "\"]" ).length, 1, "Added input for value \"" + value + "\"." );
-		}
+		setTimeout( () => {
+			// Assert: One input added per value
+			for ( let value of options.values ) {
+				assert.strictEqual( target.find( "option[value=\"" + value + "\"]" ).length, 1, "Added option for value \"" + value + "\"." );
+			}
+		}, 100);
 	};
 
 	public testUseOr( assert: QUnitAssert ) {
 
 		// Setup
-		let controller = new Controller( $(), {} );
+		let controller = new Controller( $(), {}, {} );
 		controller.onFilterUpdated = function ( filterId ) {
 			// Assert
 			assert.ok( true, 'Filter updated.' );

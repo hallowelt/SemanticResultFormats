@@ -68,7 +68,7 @@ export class Filtered {
 	}
 
 	private start() {
-		let controller = new Controller( this.target, this.config.data );
+		let controller = new Controller( this.target, this.config.data, this.config.printrequests );
 
 		this.attachFilters( controller, this.target.find( 'div.filtered-filters' ) );
 		this.attachViewSelector( controller, this.target.find( 'div.filtered-views-selectors-container' ) );
@@ -96,7 +96,6 @@ export class Filtered {
 						//  target: JQuery, printrequest: string,
 						// controller: Controller, options?: Options
 						let filter: Filter = new this.filterTypes[ pr.filters[ filterid ].type ]( filterid, filtersContainer.children( '#' + filterid ), prId, controller, pr.filters[ filterid ] );
-						filter.init();
 
 						controller.attachFilter( filter );
 

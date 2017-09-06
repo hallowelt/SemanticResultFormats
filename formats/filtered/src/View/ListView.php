@@ -130,7 +130,8 @@ class ListView extends View {
 				$printrequest = $field->getPrintRequest();
 
 				// only print value if not hidden
-				if ( $printrequest->getParameter( 'hide' ) === false ) {
+				if ( filter_var( $printrequest->getParameter( 'hide' ), FILTER_VALIDATE_BOOLEAN ) === false ) {
+
 					$wikitext .= '|' . ( $this->mNamedArgs ? '?' . $printrequest->getLabel() : $fieldNumber + 1 ) . '=';
 					$isFirstValue = true;
 
@@ -162,7 +163,7 @@ class ListView extends View {
 				while ( ( $text = $field->getNextText( SMW_OUTPUT_WIKI, $this->getQueryPrinter()->getLinker( $firstCol ) ) ) !== false ) {
 
 					// only print value if not hidden
-					if ( $printrequest->getParameter( 'hide' ) === false ) {
+					if ( filter_var( $printrequest->getParameter( 'hide' ), FILTER_VALIDATE_BOOLEAN ) === false ) {
 
 						if ( !$firstCol && !$foundValues ) { // first values after first column
 							$result .= ' (';
@@ -244,15 +245,6 @@ class ListView extends View {
 		];
 
 		return $params;
-	}
-
-	/**
-	 * Returns the name of the resource module to load for this view.
-	 *
-	 * @return string|array
-	 */
-	public function getResourceModules() {
-		return 'ext.srf.filtered.list-view';
 	}
 
 	/**
