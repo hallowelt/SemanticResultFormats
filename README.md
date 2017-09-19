@@ -52,6 +52,8 @@ A list of people who have made contributions in the past can be found [here][con
 * Ask a question on [the mailing list](https://www.semantic-mediawiki.org/wiki/Mailing_list)
 * Ask a question on the #semantic-mediawiki IRC channel on Freenode.
 
+Update
+
 
 ## License
 
